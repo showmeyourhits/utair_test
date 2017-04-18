@@ -1,11 +1,3 @@
-# Boilerplate for React Projects
+# Test for K O D E
 
-### React + Sass + Webpack
-
-This boilerplate implements couple technics:
-
-1 - CSS Modules
-2 - Sass
-3 - Html loader plugin - no need to include scripts and styles by hand
-
-and many many more 
+gotta implement https://play.google.com/store/apps/details?id=ru.utair.android

@@ -1,4 +1,12 @@
+@import './vars.scss';
+
+body {
+	margin: 0px;
+}
 .app {
-	background-color: green;
-	font-size: 10rem;
+	min-height: 100vh;
+	max-height: 100vh;
+	background-color: $blue;
+	font-family: $fonts;
+	color: $white;
 }
