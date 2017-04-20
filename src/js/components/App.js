@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from 'styles/main.scss';
+import S from 'styles/main.scss';
 import HeaderContainer from 'js/containers/HeaderContainer';
-import Body from 'js/components/Body';
+import BodyContainer from 'js/containers/BodyContainer';
 
 export default class App extends React.PureComponent {
 	render() {
 		return(
-			<div className={styles.app}>
+			<div className={S.app}>
 				<HeaderContainer />
-				<Body currentTab={'buy'} />
+				<BodyContainer />
 			</div>
 		);
 	}

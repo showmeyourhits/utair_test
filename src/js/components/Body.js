@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import S from 'styles/main.scss';
 import PageBuy from 'js/components/PageBuy';
 
-export default class Header extends React.PureComponent {
+export default class Body extends React.PureComponent {
 	static propTypes = {
 		currentTab: PropTypes.string,
 	}
@@ -10,15 +11,25 @@ export default class Header extends React.PureComponent {
 	render() {
 		const {currentTab} = this.props;
 
+		let component;
+
 		switch (currentTab) {
 			case 'tickets':
-				return <div>My mind telling me no...</div>
+				 component = <div>My mind telling me no...</div>;
+				 break;
 			case 'registration':
-				return <div>...but my body telling me yes.</div>
+				component = <div>...but my body telling me yes.</div>
+				break;
 			case 'buy':
 			default:
-				return <PageBuy />
-			
+				component = <PageBuy />;
+				break;
 		}
+
+		return (
+			<div className={S.tab_body}>
+				{component}
+			</div>
+		)
 	}
 }

@@ -1,0 +1,33 @@
+@import './vars.scss';
+
+.header {
+	display: flex;
+	flex-flow: column;
+}
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.tab {
+	flex: 1;
+	text-align: center;
+	padding: 10px 5px;
+	cursor: pointer;
+	transition-duration: .5s;
+	transition-property: background-color;
+	&:active {
+		background-color: darken($blue, 5%);
+	}
+}
+.line {
+	min-height: 2px;
+	background-color: white;
+	width: calc(100%/3);
+	position: relative;
+	transition-duration: .3s;
+	transition-property: left;
+}
+.icon {
+	margin: 5px 10px;
+}
