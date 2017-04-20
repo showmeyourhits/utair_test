@@ -5,3 +5,8 @@ export const setCurrentTab = createAction(
 	types.SET_CURRENT_TAB,
 	tab => ({tab})
 );
+
+export const toggleSideComponent = createAction(
+	types.TOGGLE_SIDE_COMPONENT,
+	(component = null) => ({component})
+);

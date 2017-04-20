@@ -1,6 +1,7 @@
 import {appTabs} from 'js/constants/AppConstants';
 
 export const getCurrentTab = state => state.AppReducer.currentTab;
+export const getSideComponent = state => state.AppReducer.sideComponent;
 
 export const getLinePosition = (state) => {
 	const currentTab = getCurrentTab(state);

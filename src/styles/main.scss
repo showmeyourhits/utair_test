@@ -11,6 +11,7 @@ body {
 	color: $white;
 	display: flex;
 	flex-flow: column;
+	overflow: hidden;
 }
 
 .tab_body {

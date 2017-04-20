@@ -1,8 +1,8 @@
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {getCurrentTab, getLinePosition} from 'js/selectors/AppSelectors';
-import {setCurrentTab, toggleSideComponent} from 'js/actions/AppActions';
-import Header from 'js/components/Header';
+import {setCurrentTab} from 'js/actions/AppActions';
+import BuyTab from 'js/components/BuyTab';
 
 const mapStateToProps = state => ({
 	currentTab: getCurrentTab(state),
@@ -11,7 +11,6 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => bindActionCreators({
 	setCurrentTab,
-	toggleSideComponent,
 }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(BuyTab);

@@ -14,8 +14,7 @@
 	text-align: center;
 	padding: 10px 5px;
 	cursor: pointer;
-	transition-duration: .5s;
-	transition-property: background-color;
+	transition: background-color .5s ease-in;
 	&:active {
 		background-color: darken($blue, 5%);
 	}
@@ -25,9 +24,12 @@
 	background-color: white;
 	width: calc(100%/3);
 	position: relative;
-	transition-duration: .3s;
-	transition-property: left;
+	transition: left .3s ease-in;
 }
+.logo,
 .icon {
 	margin: 5px 10px;
+}
+.icon {
+	cursor: pointer;
 }

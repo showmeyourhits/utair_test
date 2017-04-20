@@ -5,13 +5,13 @@ import {Provider} from 'react-redux';
 import logger from 'redux-logger';
 
 import reducer from 'js/reducers/reducer';
-import App from 'js/components/App';
+import AppContainer from 'js/containers/AppContainer';
 
 const store = createStore(reducer, applyMiddleware(logger));
 
 ReactDOM.render(
 	<Provider store={store}>
-		<App />
+		<AppContainer />
 	</Provider>,
 	document.getElementById('app')
 );

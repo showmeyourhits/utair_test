@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import S from 'styles/main.scss';
-import PageBuy from 'js/components/PageBuy';
+import BuyPageContainer from 'js/containers/BuyPageContainer';
 
 export default class Body extends React.PureComponent {
 	static propTypes = {
@@ -22,7 +22,7 @@ export default class Body extends React.PureComponent {
 				break;
 			case 'buy':
 			default:
-				component = <PageBuy />;
+				component = <BuyPageContainer />;
 				break;
 		}
 
