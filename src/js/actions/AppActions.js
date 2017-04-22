@@ -10,3 +10,7 @@ export const toggleSideComponent = createAction(
 	types.TOGGLE_SIDE_COMPONENT,
 	(component = null) => ({component})
 );
+
+export const showNotification = (text_id) => {
+	console.log(text_id);
+}

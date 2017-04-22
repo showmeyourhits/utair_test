@@ -4,5 +4,5 @@ import BuyReducer from 'js/reducers/BuyReducer';
 
 export default combineReducers({
 	AppReducer,
-	// BuyReducer,
+	BuyReducer,
 });

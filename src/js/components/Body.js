@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import S from 'styles/main.scss';
-import BuyPageContainer from 'js/containers/BuyPageContainer';
+import BuyPageContainer from 'js/containers/BuyPage/BuyPageContainer';
+import SayWhat from 'js/components/SayWhat';
 
 export default class Body extends React.PureComponent {
 	static propTypes = {
@@ -15,10 +16,10 @@ export default class Body extends React.PureComponent {
 
 		switch (currentTab) {
 			case 'tickets':
-				 component = <div>My mind telling me no...</div>;
-				 break;
+				component = <SayWhat />
+				break;
 			case 'registration':
-				component = <div>...but my body telling me yes.</div>
+				component = <SayWhat />
 				break;
 			case 'buy':
 			default:

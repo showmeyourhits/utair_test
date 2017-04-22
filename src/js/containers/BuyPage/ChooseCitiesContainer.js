@@ -2,15 +2,12 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {getCurrentTab, getLinePosition} from 'js/selectors/AppSelectors';
 import {setCurrentTab} from 'js/actions/AppActions';
-import BuyTab from 'js/components/BuyTab';
+import ChooseCities from 'js/components/BuyPage/ChooseCities';
 
 const mapStateToProps = state => ({
-	currentTab: getCurrentTab(state),
-	linePosition: getLinePosition(state),
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-	setCurrentTab,
 }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(BuyTab);
+export default connect(mapStateToProps, mapDispatchToProps)(ChooseCities);

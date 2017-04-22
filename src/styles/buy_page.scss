@@ -1,0 +1,24 @@
+.wrapper {
+	height: 100%;
+	flex: 1;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.cities {
+	flex-grow: 2;
+}
+
+.dates {
+	flex-grow: 1;
+}
+
+.passengers {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 2;
+}

@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
+	devtool: 'cheap-eval-source-map',
 	entry: {
 		index: path.resolve('src/js/index.js'),
 	},

@@ -6,12 +6,7 @@ import BodyContainer from 'js/containers/BodyContainer';
 import SideContainer from 'js/containers/SideContainer';
 
 export default class App extends React.PureComponent {
-	static propTypes = {
-		sideComponent: PropTypes.func,
-	}
-
 	render() {
-		const {sideComponent} = this.props;
 		return(
 			<div className={S.app}>
 				<HeaderContainer />
