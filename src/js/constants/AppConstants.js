@@ -1,5 +1,6 @@
 export const SET_CURRENT_TAB = 'SET_CURRENT_TAB';
 export const TOGGLE_SIDE_COMPONENT = 'TOGGLE_SIDE_COMPONENT';
+export const SHOW_NOTIFICATION = 'SHOW_NOTIFICATION';
 
 export const appTabs = [{
 	value: 'tickets',

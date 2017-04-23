@@ -47,7 +47,6 @@ export default class SideComponent extends React.PureComponent {
 
 	render() {
 		const {sideComponent} = this.props;
-		console.log(this.constructor.transition);
 
 		return (
 			<CSSTransitionGroup

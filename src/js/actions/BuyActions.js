@@ -33,12 +33,8 @@ export const setDepartAndArrivalCities = createAction(
 
 export const setPassengers = createAction(
 	types.SET_PASSENGERS,
-	(humans, kids, babies) => ({
-		passengers: {
-			humans: Number(humans),
-			kids: Number(kids),
-			babies: Number(babies),
-		},
+	(newPassengers) => ({
+		passengers: newPassengers,
 	})
 );
 
