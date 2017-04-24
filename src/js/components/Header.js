@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import S from 'styles/header.scss';
 import {appTabs} from 'js/constants/AppConstants';
 import PlaneIcon from 'react-icons/lib/md/airplanemode-active';
+import Info from 'js/components/InfoComponent';
 import InfoIcon from 'react-icons/lib/md/info-outline';
 
 export default class Header extends React.PureComponent {
@@ -19,7 +20,7 @@ export default class Header extends React.PureComponent {
 		setCurrentTab(event.target.dataset.value);
 	}
 
-	showInfo = () => this.props.toggleSideComponent('info')
+	showInfo = () => this.props.toggleSideComponent(<Info hide={this.props.toggleSideComponent}/>)
 
 	render() {
 		const {currentTab, linePosition} = this.props;

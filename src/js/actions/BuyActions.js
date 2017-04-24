@@ -7,16 +7,16 @@ export const setCities = createAction(
 	(cities) => ({cities})
 );
 
-export const getCities = dispatch => {
-	return fetch('/something')
+export const getCities = () => dispatch => {
+	fetch('/something')
 		.then(response => {
 			const cities = response.results;
 			dispatch(setCities(cities.map(city => ({id: city.id, title: city.city}))));
 		})
 		.catch(error => {
 			showNotification('get_cities_error', error);
-		})
-}
+		});
+};
 
 export const setDates = createAction(
 	types.SET_DATES,
