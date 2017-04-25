@@ -22,6 +22,7 @@ export default class ChooseCities extends React.PureComponent {
 
 	render() {
 		const {type, cities} = this.props;
+		console.log(cities);
 
 		return (
 			<div className={'hi'}>

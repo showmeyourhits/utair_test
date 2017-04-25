@@ -8,10 +8,11 @@ export const setCities = createAction(
 );
 
 export const getCities = () => dispatch => {
-	fetch('/something')
+	return fetch('/cities')
 		.then(response => {
-			const cities = response.results;
-			dispatch(setCities(cities.map(city => ({id: city.id, title: city.city}))));
+			response.json().then(res => {
+				dispatch(setCities(res.results.map(city => ({id: city.id, title: city.city}))));
+			});
 		})
 		.catch(error => {
 			showNotification('get_cities_error', error);
@@ -37,4 +38,3 @@ export const setPassengers = createAction(
 		passengers: newPassengers,
 	})
 );
-
